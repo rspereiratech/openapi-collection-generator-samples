@@ -1,5 +1,11 @@
 # OpenAPI Collection Generator – Samples
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Java 17](https://img.shields.io/badge/Java-17-orange.svg)](https://openjdk.org/projects/jdk/17/)
+[![OpenAPI 3.0](https://img.shields.io/badge/OpenAPI-3.0-6BA539.svg?logo=openapiinitiative&logoColor=white)](https://spec.openapis.org/oas/v3.0.3)
+[![Postman](https://img.shields.io/badge/Postman-FF6C37.svg?logo=postman&logoColor=white)](https://www.postman.com/)
+[![Insomnia](https://img.shields.io/badge/Insomnia-4000BF.svg?logo=insomnia&logoColor=white)](https://insomnia.rest/)
+
 Reference samples for the
 [`openapi-collection-generator`](https://github.com/rspereiratech) ecosystem.
 This repo demonstrates how to use each module — the **core** library, the
