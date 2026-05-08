@@ -205,4 +205,9 @@ query parameters, JSON request bodies, multi-status responses).
 
 ## License
 
-See the parent project for license information.
+Released under the [MIT License](LICENSE).
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for setup and PR guidelines, and
+[SECURITY.md](SECURITY.md) for how to report security issues.
