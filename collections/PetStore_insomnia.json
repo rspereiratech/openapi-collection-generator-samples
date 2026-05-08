@@ -1,0 +1,115 @@
+{
+  "resources" : [ {
+    "name" : "PetStore",
+    "description" : "A sample API for testing the collection generator plugin",
+    "scope" : "collection",
+    "_id" : "wrk_8efd1cd8d66d4fd7b1363f1b005e65a5",
+    "_type" : "workspace"
+  }, {
+    "name" : "Production",
+    "data" : {
+      "base_url" : "https://api.petstore.example.com/v1"
+    },
+    "_id" : "env_97d897b742ec4cf587c939e7f775b26d",
+    "_type" : "environment",
+    "parentId" : "wrk_8efd1cd8d66d4fd7b1363f1b005e65a5"
+  }, {
+    "name" : "pets",
+    "description" : "",
+    "_id" : "fld_e1eebee0b56b4e8fa3cf2704cef2f7b3",
+    "_type" : "request_group",
+    "parentId" : "wrk_8efd1cd8d66d4fd7b1363f1b005e65a5"
+  }, {
+    "name" : "List all pets",
+    "method" : "GET",
+    "url" : "{{ base_url }}/pets",
+    "body" : null,
+    "headers" : [ ],
+    "parameters" : [ {
+      "name" : "limit",
+      "value" : "",
+      "description" : "Maximum number of pets to return"
+    } ],
+    "description" : "",
+    "_id" : "req_260a692a83a649079af35af463feba81",
+    "_type" : "request",
+    "parentId" : "fld_e1eebee0b56b4e8fa3cf2704cef2f7b3"
+  }, {
+    "name" : "Create a pet",
+    "method" : "POST",
+    "url" : "{{ base_url }}/pets",
+    "body" : {
+      "mimeType" : "application/json",
+      "text" : "{\n  \"id\" : \"00000000-0000-0000-0000-000000000000\",\n  \"name\" : \"string\",\n  \"species\" : \"dog\",\n  \"ownerId\" : \"00000000-0000-0000-0000-000000000000\"\n}"
+    },
+    "headers" : [ {
+      "name" : "Content-Type",
+      "value" : "application/json"
+    } ],
+    "parameters" : [ ],
+    "description" : "",
+    "_id" : "req_df250ab07228480f89efcf38dc8a1149",
+    "_type" : "request",
+    "parentId" : "fld_e1eebee0b56b4e8fa3cf2704cef2f7b3"
+  }, {
+    "name" : "Get a pet by ID",
+    "method" : "GET",
+    "url" : "{{ base_url }}/pets/:petId",
+    "body" : null,
+    "headers" : [ ],
+    "parameters" : [ ],
+    "description" : "",
+    "_id" : "req_d09acc791f53440fb0e1b612f03c6b3f",
+    "_type" : "request",
+    "parentId" : "fld_e1eebee0b56b4e8fa3cf2704cef2f7b3"
+  }, {
+    "name" : "Update a pet",
+    "method" : "PUT",
+    "url" : "{{ base_url }}/pets/:petId",
+    "body" : {
+      "mimeType" : "application/json",
+      "text" : "{\n  \"id\" : \"00000000-0000-0000-0000-000000000000\",\n  \"name\" : \"string\",\n  \"species\" : \"dog\",\n  \"ownerId\" : \"00000000-0000-0000-0000-000000000000\"\n}"
+    },
+    "headers" : [ {
+      "name" : "Content-Type",
+      "value" : "application/json"
+    } ],
+    "parameters" : [ ],
+    "description" : "",
+    "_id" : "req_0dcc39d4c1ac46879857162e6ecc4bf6",
+    "_type" : "request",
+    "parentId" : "fld_e1eebee0b56b4e8fa3cf2704cef2f7b3"
+  }, {
+    "name" : "Delete a pet",
+    "method" : "DELETE",
+    "url" : "{{ base_url }}/pets/:petId",
+    "body" : null,
+    "headers" : [ ],
+    "parameters" : [ ],
+    "description" : "",
+    "_id" : "req_d3547533726145eea34200e86c006759",
+    "_type" : "request",
+    "parentId" : "fld_e1eebee0b56b4e8fa3cf2704cef2f7b3"
+  }, {
+    "name" : "owners",
+    "description" : "",
+    "_id" : "fld_4d47c8d7dc974406a1eee65d6066a3d2",
+    "_type" : "request_group",
+    "parentId" : "wrk_8efd1cd8d66d4fd7b1363f1b005e65a5"
+  }, {
+    "name" : "List all owners",
+    "method" : "GET",
+    "url" : "{{ base_url }}/owners",
+    "body" : null,
+    "headers" : [ ],
+    "parameters" : [ ],
+    "description" : "",
+    "_id" : "req_49aa0efd71884d96a6ef291d2b6efd24",
+    "_type" : "request",
+    "parentId" : "fld_4d47c8d7dc974406a1eee65d6066a3d2"
+  } ],
+  "_type" : "export",
+  "__export_format" : 4,
+  "__export_date" : "2026-04-01T15:11:48.818181Z",
+  "__export_source" : "openapi-collection-maven-plugin"
+}
