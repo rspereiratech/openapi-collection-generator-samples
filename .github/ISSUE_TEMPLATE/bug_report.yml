@@ -1,0 +1,81 @@
+name: Bug report
+description: Report an issue with the sample build or generated collections
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting an issue with the samples project. This repository
+        validates the OpenAPI collection generator plugin end-to-end. Issues
+        with the generator itself should be filed in the corresponding
+        module's repository instead.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: A clear and concise description of the bug.
+    validations:
+      required: true
+
+  - type: textarea
+    id: openapi-input
+    attributes:
+      label: OpenAPI spec used
+      description: |
+        The OpenAPI spec used in the sample (or a reduction). Paste inline as
+        YAML/JSON, or link to a file in this repository.
+      render: yaml
+    validations:
+      required: false
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual output
+      description: What the sample build produced (logs, generated files, exceptions).
+      render: shell
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+
+  - type: input
+    id: plugin-version
+    attributes:
+      label: Plugin version used in the sample
+      placeholder: "1.0.0-SNAPSHOT"
+    validations:
+      required: true
+
+  - type: input
+    id: maven-version
+    attributes:
+      label: Maven version
+      placeholder: "e.g. 3.9.9"
+    validations:
+      required: false
+
+  - type: input
+    id: java-version
+    attributes:
+      label: Java version
+      placeholder: "e.g. 17.0.12 (Temurin)"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: pre-flight
+    attributes:
+      label: Pre-flight checklist
+      options:
+        - label: I have searched existing issues and could not find a duplicate.
+          required: true
+        - label: My report follows the [Code of Conduct](../CODE_OF_CONDUCT.md).
+          required: true
