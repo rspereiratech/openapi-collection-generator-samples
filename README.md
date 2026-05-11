@@ -1,12 +1,12 @@
 # OpenAPI Collection Generator – Samples
 
+[![Build](https://github.com/rspereiratech/openapi-collection-generator-samples/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/rspereiratech/openapi-collection-generator-samples/actions/workflows/build.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Java 17](https://img.shields.io/badge/Java-17-orange.svg)](https://openjdk.org/projects/jdk/17/)
 [![Maven 3.9+](https://img.shields.io/badge/Maven-3.9%2B-C71A36.svg?logo=apachemaven&logoColor=white)](https://maven.apache.org/)
 [![OpenAPI 3.0](https://img.shields.io/badge/OpenAPI-3.0-6BA539.svg?logo=openapiinitiative&logoColor=white)](https://spec.openapis.org/oas/v3.0.3)
 [![Postman v2.1](https://img.shields.io/badge/Postman-v2.1-FF6C37.svg?logo=postman&logoColor=white)](https://schema.postman.com/)
 [![Insomnia v4](https://img.shields.io/badge/Insomnia-v4-4000BF.svg?logo=insomnia&logoColor=white)](https://insomnia.rest/)
-[![Status: snapshot](https://img.shields.io/badge/Status-snapshot-orange.svg)]()
 [![Donate](https://img.shields.io/badge/Donate-NOWPayments-1A1A1A?logo=bitcoin&logoColor=white)](https://nowpayments.io/donation/rspereiratech)
 
 Reference samples for the
