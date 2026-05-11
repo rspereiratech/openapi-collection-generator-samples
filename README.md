@@ -7,6 +7,7 @@
 [![Postman v2.1](https://img.shields.io/badge/Postman-v2.1-FF6C37.svg?logo=postman&logoColor=white)](https://schema.postman.com/)
 [![Insomnia v4](https://img.shields.io/badge/Insomnia-v4-4000BF.svg?logo=insomnia&logoColor=white)](https://insomnia.rest/)
 [![Status: snapshot](https://img.shields.io/badge/Status-snapshot-orange.svg)]()
+[![Donate](https://img.shields.io/badge/Donate-NOWPayments-1A1A1A?logo=bitcoin&logoColor=white)](https://nowpayments.io/donation/rspereiratech)
 
 Reference samples for the
 [`openapi-collection-generator`](https://github.com/rspereiratech) ecosystem.
@@ -210,6 +211,14 @@ The included `openapi.yaml` describes a small **Pet Store** API with
 endpoints for listing, creating, and retrieving pets — enough surface area
 to exercise the most common request and response shapes (path parameters,
 query parameters, JSON request bodies, multi-status responses).
+
+## Support
+
+[![Donate](https://img.shields.io/badge/Donate-NOWPayments-1A1A1A?logo=bitcoin&logoColor=white)](https://nowpayments.io/donation/rspereiratech)
+
+If this project saves you time, consider supporting development
+via [NOWPayments](https://nowpayments.io/donation/rspereiratech).
+Every contribution helps keep it maintained — thank you!
 
 ## License
 
