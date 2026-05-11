@@ -16,10 +16,23 @@
 
     <name>OpenAPI Collection Generator - Samples</name>
     <description>Sample project to validate the OpenAPI collection generator plugin.</description>
+    <url>https://github.com/rspereiratech/openapi-collection-generator-samples</url>
+
+    <scm>
+        <connection>scm:git:git://github.com/rspereiratech/openapi-collection-generator-samples.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/rspereiratech/openapi-collection-generator-samples.git</developerConnection>
+        <url>https://github.com/rspereiratech/openapi-collection-generator-samples</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <issueManagement>
+        <system>GitHub Issues</system>
+        <url>https://github.com/rspereiratech/openapi-collection-generator-samples/issues</url>
+    </issueManagement>
 
     <build>
         <plugins>
-            <!-- Generate Postman collection -->
+            <!-- Generate Postman and Insomnia collections -->
             <plugin>
                 <groupId>com.github.rspereiratech</groupId>
                 <artifactId>openapi-collection-generator-maven-plugin</artifactId>
