@@ -49,7 +49,7 @@ both Postman and Insomnia collections during `generate-resources`:
 
 ```xml
 <plugin>
-    <groupId>com.github.rspereiratech</groupId>
+    <groupId>io.github.rspereiratech</groupId>
     <artifactId>openapi-collection-generator-maven-plugin</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <executions>
@@ -80,7 +80,7 @@ mvn generate-resources
 Or invoke the goal directly from the command line:
 
 ```bash
-mvn com.github.rspereiratech:openapi-collection-generator-maven-plugin:generate \
+mvn io.github.rspereiratech:openapi-collection-generator-maven-plugin:generate \
     -Dopenapi.spec=src/main/resources/openapi.yaml \
     -Dopenapi.format=INSOMNIA \
     -Dopenapi.outputDir=target/collections
@@ -105,7 +105,7 @@ custom build step), depend on the core module directly:
 
 ```xml
 <dependency>
-    <groupId>com.github.rspereiratech</groupId>
+    <groupId>io.github.rspereiratech</groupId>
     <artifactId>openapi-collection-generator-core</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 </dependency>
@@ -115,7 +115,7 @@ The single entry point is `CollectionGenerationOrchestrator`, which runs
 the full pipeline (load → parse → generate → serialize → write):
 
 ```java
-import com.github.rspereiratech.openapi.collection.generator.core.*;
+import io.github.rspereiratech.openapi.collection.generator.core.*;
 
 GenerationRequest request = new GenerationRequest(
         new File("src/main/resources/openapi.yaml"),
@@ -146,14 +146,14 @@ If you only care about Postman and want full control over wiring, use
 
 ```xml
 <dependency>
-    <groupId>com.github.rspereiratech</groupId>
+    <groupId>io.github.rspereiratech</groupId>
     <artifactId>openapi-collection-generator-postman</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 </dependency>
 ```
 
 ```java
-import com.github.rspereiratech.openapi.collection.generator.postman.generator.PostmanCollectionGenerator;
+import io.github.rspereiratech.openapi.collection.generator.postman.generator.PostmanCollectionGenerator;
 
 PostmanCollectionGenerator generator = new PostmanCollectionGenerator(
         operationGrouper,
@@ -181,14 +181,14 @@ Same idea, for Insomnia v4:
 
 ```xml
 <dependency>
-    <groupId>com.github.rspereiratech</groupId>
+    <groupId>io.github.rspereiratech</groupId>
     <artifactId>openapi-collection-generator-insomnia</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 </dependency>
 ```
 
 ```java
-import com.github.rspereiratech.openapi.collection.generator.insomnia.generator.InsomniaCollectionGenerator;
+import io.github.rspereiratech.openapi.collection.generator.insomnia.generator.InsomniaCollectionGenerator;
 
 InsomniaCollectionGenerator generator = new InsomniaCollectionGenerator(
         idGenerator,
