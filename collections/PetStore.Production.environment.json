@@ -1,10 +1,10 @@
 {
-  "_postman_variable_scope" : "environment",
   "name" : "Production",
   "values" : [ {
     "key" : "baseUrl",
     "value" : "https://api.petstore.example.com/v1",
     "enabled" : true,
     "type" : "default"
-  } ]
+  } ],
+  "_postman_variable_scope" : "environment"
 }
