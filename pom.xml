@@ -18,6 +18,11 @@
     <description>Sample project to validate the OpenAPI collection generator plugin.</description>
     <url>https://github.com/rspereiratech/openapi-collection-generator-samples</url>
 
+    <properties>
+        <!-- Samples are for learning the plugin, not a published artifact: never deploy them. -->
+        <maven.deploy.skip>true</maven.deploy.skip>
+    </properties>
+
     <scm>
         <connection>scm:git:git://github.com/rspereiratech/openapi-collection-generator-samples.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/rspereiratech/openapi-collection-generator-samples.git</developerConnection>
